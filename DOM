@@ -231,7 +231,7 @@ color: yellow;
 		function getCityName()
 	{
        cityDivision = document.getElementById("cities")
-	cityNamesInput = cityDivision.getElementsByTagName("input")
+	cityNamesInput = cities.getElementsByTagName("input")
 	cityNamesOutput = document.getElementsByTagName("p")
 	cityNamesOutput[0].innerHTML =cityNamesInput[0].value
 	cityNamesOutput[1].innerHTML =cityNamesInput[1].value

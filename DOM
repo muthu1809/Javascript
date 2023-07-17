@@ -91,7 +91,6 @@ DOM Events:
 Activity #0.1: 
 -----------
 <input type="text" onchange="alert(this.value)">
-<input type="button" value="Button">
 
 Activity #0.2:
 -------------

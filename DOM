@@ -707,7 +707,62 @@ DOM Objectsஇன் properties.
   </script>
 </body>
 
+<html> = document.documentElement
+<head> = document.head
+<body> = document.body
+<table><tr> = table.rows
+<table><tr><td> = table.rows[0].cells[0]
 
+let td = table.rows[0].cells[1];
+td.style.backgroundColor = "red"; 
+
+
+Body has childNodes: 
+
+Eg. 
+
+<html>
+<body>
+  <div>First Division</div>
+
+  <ul>
+    <li>
+      <b>Check Me</b>
+    </li>
+  </ul>
+    <div>Second Division</div>
+
+    <script>
+    for (let i = 0; i < document.body.childNodes.length; i++) {
+      alert(document.body.childNodes[i]); 
+    }
+   </script>
+</body>
+</html>
+
+மேல் உள்ள forஐ இப்படியும் எழுதலாம்: 
+for (let node of document.body.childNodes) {
+  alert(node); // shows all nodes from the collection
+}
+
+=============================================================================
+
+<!doctype html>
+<body>
+<p> Hi </p>
+<p> Hello </p>
+<ul>
+    <li> Tamil </li>
+    <li> English </li>
+</ul>
+<script>
+  let elements = document.querySelectorAll('li');
+//let elements = document.querySelectorAll('p');
+  for (let elem of elements) {
+    alert(elem.innerHTML); // Hi, Hello
+  }
+</script>
+</body>
 DOM Functions: createElement, createTextNode, appendChild
 
 ----------

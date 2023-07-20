@@ -763,6 +763,29 @@ for (let node of document.body.childNodes) {
   }
 </script>
 </body>
+=========================================
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Document Object</h1>
+<h2>addEventListener() Method Demo</h2>
+
+<p>Click anywhere in the document to display "Vanakkam!".</p>
+
+<p id="abcd"></p>
+
+<script>
+document.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("abcd").innerHTML = "Hello World";
+}
+</script>
+
+</body>
+</html>
+
 DOM Functions: createElement, createTextNode, appendChild
 
 ----------

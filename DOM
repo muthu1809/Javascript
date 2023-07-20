@@ -1,4 +1,4 @@
-Color Flipper: 
+ம்Color Flipper: 
 <html>
 <head>
 <title> Color Flipper </title>
@@ -785,7 +785,11 @@ function myFunction() {
 
 </body>
 </html>
-
+இதையே சுருக்கி 
+document.addEventListener("click", function(){
+  document.getElementById("demo").innerHTML = "Vanakkam";
+}); 
+எற்
 DOM Functions: createElement, createTextNode, appendChild
 
 ----------
@@ -820,6 +824,7 @@ Change Table Border Using Javascript:
 </html>
 
 -------------------
+
 
 <!DOCTYPE html>
 <html lang="en">

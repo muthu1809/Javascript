@@ -92,6 +92,39 @@ Activity #0.1:
 -----------
 <input type="text" onchange="alert(this.value)">
 
+Input Validation: 
+----------------
+<input id="name" type="text">
+
+<script>
+const isEmpty = (str) => !str.trim().length;
+
+document.getElementById("name").addEventListener("input", function() {
+  if( isEmpty(this.value) ) {
+    console.log( "NAME is invalid (Empty)" )
+  } else {
+    console.log( `NAME value is: ${this.value}` );
+  }
+});
+
+</script>
+
+addEventListener:
+-----------------
+<button id="abcd">Click Here</button>
+
+<p id="pqrs"></p>
+
+<script>
+document.getElementById("abcd").addEventListener("click", displayDate);
+
+function displayDate() {
+  document.getElementById("pqrs").innerHTML = Date();
+}
+</script>
+----------------------------------------
+
+
 Activity #0.2:
 -------------
 <select onchange="alert(this.value)">

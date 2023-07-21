@@ -1,4 +1,4 @@
-ம்Color Flipper: 
+Color Flipper: 
 <html>
 <head>
 <title> Color Flipper </title>
@@ -133,6 +133,8 @@ Activity #0.2:
   <option value="2">Kamal</option>
   <option value="3">Vijayakanth</option>
 </select>
+
+<select onchange="alert(event.target.value)"> உம் கொடுக்கலாம்.  
 
 Activity #0.3: 
 ---------------

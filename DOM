@@ -265,7 +265,7 @@ color: yellow;
 		function getCityName()
 	{
        cityDivision = document.getElementById("cities")
-	cityNamesInput = cities.getElementsByTagName("input")
+	cityNamesInput = cityDivision.getElementsByTagName("input")
 	cityNamesOutput = document.getElementsByTagName("p")
 	cityNamesOutput[0].innerHTML =cityNamesInput[0].value
 	cityNamesOutput[1].innerHTML =cityNamesInput[1].value
@@ -434,7 +434,7 @@ Creating HTML Tag using Javascript:
 We shall create a division.  This division will be useful for appending <p> tag.
 
 3. appendChild function மூலம் நாம் தட்டச்சிட்ட textஐ division tag இல் சேமிக்கப் போகிறோம்.
-We can sue appendChild() function
+We can save appendChild() function
 
 4. document.createElement("p") எனக் கொடுத்தால் paragraph element உருவாகி விடும்.
 
@@ -814,7 +814,7 @@ for (let node of document.body.childNodes) {
 document.addEventListener("click", myFunction);
 
 function myFunction() {
-  document.getElementById("abcd").innerHTML = "Hello World";
+  document.getElementById("abcd").innerHTML = "Vanakkam";
 }
 </script>
 
@@ -824,7 +824,7 @@ function myFunction() {
 document.addEventListener("click", function(){
   document.getElementById("demo").innerHTML = "Vanakkam";
 }); 
-எற்
+என்று எழுதலாம். 
 DOM Functions: createElement, createTextNode, appendChild
 
 ----------
@@ -855,6 +855,7 @@ Change Table Border Using Javascript:
 
     }
     </script>
+
 </body>
 </html>
 
